@@ -49,7 +49,8 @@ rm $TARBALL
 echo "done"
 
 echo -n "-----> Configuring $SODIUM_DIR... "
-cd $SODIUM_DIR
+#cd $SODIUM_DIR
+cd libsodium-stable
 ./configure --silent --disable-debug --disable-dependency-tracking --prefix=$INSTALL_DIR
 echo "done"
 
